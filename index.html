@@ -4,16 +4,18 @@
 	<title>京东商城</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="shopping.css">
+	 <link rel="stylesheet" href="css/swiper.min.css">
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="shopping.js"></script>
 	</head>
 <body>
+	
 	<header>
 		<div class="header-top clearfix">
 			<div class="header-top-left">
-				<p class="song">送至：北京<span>︿</span></p>
+				<p class="song">送至：北京<span class="xia">﹀</span></p>
 				<div class="citylist">
-					<a href="#">北京</a>
+					<a href="#" id="beijing">北京</a>
 					<a href="#">上海</a>
 					<a href="#">天津</a>
 					<a href="#">重庆</a>
@@ -52,16 +54,16 @@
 				</div>
 			</div>
 			<div class="header-top-right">
-				<a href="#">你好，请登录</a>
-				<a href="#" id="zhuce">免费注册</a>&nbsp;|
-				<a href="#">我的订单</a>&nbsp;|
-				<a href="#" class="myjd0">
+				<a href="#" class="header-padding">你好，请登录</a>
+				<a href="#" id="zhuce" class="header-padding">免费注册</a>|
+				<a href="#" class="header-padding" class="header-padding">我的订单</a>|
+				<a href="#" class="myjd0 header-padding">
 					我的京东
 					<div class="myjd">
-						<div class="myjd-up">
-							<img src="images/no-img_mid_.jpg">
+						<div class="myjd-up clearfix">
+							<a href="" class="no-img"><img src="images/no-img_mid_.jpg"></a>
 							<div class="myjd-login">
-								<a href="#">你好，请登录</a>
+								<a href="#" class="myjd-login-hello">你好，请登录</a><br/>
 								<a href="#">优惠券</a> | <a href="#">消息</a>
 							</div>
 						</div>
@@ -76,13 +78,116 @@
 								<li><a href="#">京东白条</a></li>
 						</ul>
 					</div>
-				</a>&nbsp;|
-				<a href="#">京东会员</a>&nbsp;|
-				<a href="#">企业采购</a>&nbsp;|
-				<a href="#">手机京东</a>&nbsp;|
-				<span>关注京东</span>&nbsp;|
-				<span>客户服务</span>&nbsp;|
-				<span>网站导航</span>
+				</a>|
+				<a href="#" class="header-padding">京东会员</a>|
+				<a href="#" class="header-padding">企业采购</a>|
+				<a href="#" class="header-padding phone">手机京东
+					<img src="images/phonejd.png" class="phonejd">
+				</a>|
+				<span class="guanzhujd  header-padding">
+					关注京东
+					<div class="gzjd">
+						<img src="images/guangzhujd.jpg">
+					</div>
+				</span>|
+				<span class="header-padding khfw">客户服务
+					<div class="khfw-hover">
+						<div class="khfw-hover-up">
+							<h4>客户</h4>
+							<ul>
+								<li><a href="#">帮助中心</a></li>
+								<li><a href="#">售后服务</a></li>
+								<li><a href="#">在线客服</a></li>
+								<li><a href="#">意见建议</a></li>
+								<li><a href="#">客服邮箱</a></li>
+							</ul>
+						</div>
+						<div class="khfw-hover-down">
+							<h4>商户</h4>
+							<p>京东商学院</p>
+						</div>
+					</div>
+				</span>|
+				<span class="header-padding wzdh">网站导航
+					<div class="wzdh-hover">
+						<dl>
+							<dt>特色主题</dt>
+							<dd><a href="#">品牌街</a></dd>
+							<dd><a href="#">好物100</a></dd>
+							<dd><a href="#">京东预售</a></dd>
+							<dd><a href="#">尖er货</a></dd>
+							<dd><a href="#">京东首发</a></dd>
+							<dd><a href="#">今日团购</a></dd>
+							<dd><a href="#">优惠券</a></dd>
+							<dd><a href="#">闪购</a></dd>
+							<dd><a href="#">京东会员</a></dd>
+							<dd><a href="#">天天低价</a></dd>
+							<dd><a href="#">定期送</a></dd>
+							<dd><a href="#">装机大师</a></dd>
+							<dd><a href="#">新奇特</a></dd>
+							<dd><a href="#">京东试用</a></dd>
+							<dd><a href="#">礼品购</a></dd>
+							<dd><a href="#">智能馆</a></dd>
+							<dd><a href="#">玩bigger</a></dd>
+							<dd><a href="#">大牌免息</a></dd>
+							<dd><a href="#">京东会员</a></dd>
+							<dd><a href="#">北京老字号</a></dd>
+						</dl>
+						<dl>
+							<dt>行业频道</dt>
+							<dd><a href="#">服装城</a></dd>
+							<dd><a href="#">家用电器</a></dd>
+							<dd><a href="#">电脑办公</a></dd>
+							<dd><a href="#">手机</a></dd>
+							<dd><a href="#">美妆馆</a></dd>
+							<dd><a href="#">食品</a></dd>
+							<dd><a href="#">数码</a></dd>
+							<dd><a href="#">母婴</a></dd>
+							<dd><a href="#">家装城</a></dd>
+							<dd><a href="#">运动户外</a></dd>
+							<dd><a href="#">整车</a></dd>
+							<dd><a href="#">图书</a></dd>
+							<dd><a href="#">农资频道</a></dd>
+							<dd><a href="#">京东智能</a></dd>
+						</dl>
+						<dl>
+							<dt>生活服务</dt>
+							<dd><a href="#">京东众筹</a></dd>
+							<dd><a href="#">白条</a></dd>
+							<dd><a href="#">京东钱包</a></dd>
+							<dd><a href="#">京东小金库</a></dd>
+							<dd><a href="#">理财</a></dd>
+							<dd><a href="#">话费</a></dd>
+							<dd><a href="#">旅行</a></dd>
+							<dd><a href="#">彩票</a></dd>
+							<dd><a href="#">游戏</a></dd>
+							<dd><a href="#">机票酒店</a></dd>
+							<dd><a href="#">电影票</a></dd>
+							<dd><a href="#">水电煤</a></dd>
+							<dd><a href="#">京东到家</a></dd>
+							<dd><a href="#">京东微联</a></dd>
+							<dd><a href="#">京东众测</a></dd>
+						</dl>
+						<dl>
+							<dt>更多精选</dt>
+							<dd><a href="#">京东社区</a></dd>
+							<dd><a href="#">京东通信</a></dd>
+							<dd><a href="#">在线读书</a></dd>
+							<dd><a href="#">京东E卡</a></dd>
+							<dd><a href="#">智能社区</a></dd>
+							<dd><a href="#">游戏社区</a></dd>
+							<dd><a href="#">京友邦</a></dd>
+							<dd><a href="#">卖家入驻</a></dd>
+							<dd><a href="#">企业采购</a></dd>
+							<dd><a href="#">服务市场</a></dd>
+							<dd><a href="#">乡村招募</a></dd>
+							<dd><a href="#">校园加盟</a></dd>
+							<dd><a href="#">办公生活馆</a></dd>
+							<dd><a href="#">知识产权维权</a></dd>
+							<dd><a href="#">English Site</a></dd>
+						</dl>
+					</div>
+				</span>
 			</div>
 		</div>
 		<div class="header-add">
@@ -90,7 +195,8 @@
 			<span class="close"></span>
 		</div>
 	</header>
-	<div class="container">
+	<a name="aa"></a>
+ 	<div class="container">
 	    <div class="search clearfix">
 	        <div class="logo">
 	            <img src="images/logo-201305.png">
@@ -99,7 +205,7 @@
 	            <input type="text" placeholder="闪购特卖">
 	            <button>搜索</button>
 	        </form>
-	        <div class="car">
+	        <div class="car clearfix">
 	            <span class="car-tu"></span>
 	            <a href="#">我的购物车</a>&nbsp;&nbsp;〉
 	            <div class="car-none">
@@ -216,7 +322,17 @@
 	    				<div class="clear"></div>
 	    			</ul>
 	    		</div>
-	    		<div class="first-center clearfix">
+	    		<div class="first-center clearfix  swiper-container" style="margin:  12px 10px 0px 5px;">
+	    			<div class="swiper-wrapper">
+			           	<a href="" class="swiper-slide"><img src="images/zz1.jpg"></a>
+	    				<a href="" class="swiper-slide"><img src="images/98.jpg"></a>
+	    				<a href="" class="swiper-slide"><img src="images/99.jpg"></a>
+       				</div>
+	    			 <!-- Add Pagination -->
+			        <div class="swiper-pagination swiper-pagination-white"></div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next swiper-button-white"></div>
+			        <div class="swiper-button-prev swiper-button-white"></div>
 	    		</div>
 	    		<div class="first-right clearfix">
 	    			<div class="first-right-up clearfix">
@@ -530,7 +646,7 @@
 	    			</div>
 	    			<div class="f1-header-right">
 	    				<ul>
-		    					<li>大牌</li>
+		    					<li id="first">大牌</li>
 		    					<li>男装</li>
 		    					<li>女装</li>
 		    					<li>鞋靴</li>
@@ -816,7 +932,7 @@
 	    		</div>
 	    	</div>
 	    	<!-- 3F部分 用1F位模板-->
-	    		<div class="f3">
+	    	<div class="f3">
 	    		<div class="f1-header clearfix">
 	    			<div class="f1-header-left">
 	    				<h2>
@@ -952,7 +1068,7 @@
 	    		</div>
 	    	</div>
 	    </div>
-	</div>
+	</div> 
 	<footer>
 		<div class="footer-header">
 				<img src="images/service_items_1.png">
@@ -1051,9 +1167,44 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer> 
 	<div class="fixed-right">
+		<a href="#" class="hb"><img src="images/618.png"></a>
+		<p class="link1"></p>
+		<a href="#" class="ren" class="fixed-right-hover"></a>
+		<a href="#" class="huiyuan base">京东会员</a>
+		<a href="#" class="che fixed-right-hover"></a>
+		<a href="#" class="shoppingcar base">购物车</a>
+		<a href="#" class="xin fixed-right-hover"></a>
+		<a href="#" class="wdgz base">我的关注</a>
+		<a href="#" class="biao fixed-right-hover"></a>
+		<a href="#" class="wdzj base">我的足迹</a>
+		<a href="#" class="liao fixed-right-hover"></a>
+		<a href="#" class="wdxx base">我的消息</a>
+		<a href="#" class="money fixed-right-hover"></a>
+		<a href="#" class="zxzx base">咨询JIMI</a>
+		<p class="link2"></p>
+		<a   href="#aa" class="shang"></a>
+		<a href="#" class="s base" id="s">TOP</a>
+		<a class="bi"></a>
+		<a href="#" class="f base" id="f">反馈</a>
 		
 	</div>
+
+	 <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    	 var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade'
+    	});
+    </script>
 </body>
 </html>
