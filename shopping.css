@@ -25,7 +25,8 @@ li{
 	font-size: 13px;
 	color: #666666;
 	height: 30px;
-	width: 1303px;
+	max-width: 1346px;
+	overflow: hidden;
 }
 .header-top-left{
 	float: left;
@@ -150,13 +151,17 @@ li{
 	color: #C81623;
 }
 .header-add{
-	width: 1303px;
+	max-width: 1346px;
+	overflow: hidden;
 	background-color: #FE0C54;
 	position: relative;
 }
 .header-add a{
 	margin: 0 auto;
 	display: block;
+	max-width: 1346px;
+	overflow: hidden;
+
 }
 .header-add a img{
 	margin: 0 auto;
@@ -233,9 +238,9 @@ li{
 	border-top: none;
 	left: 50px;
 	top: 28px;
-	height: 200px;
+	height: 180px;
 	background-color: #fff;
-	z-index: 12px;
+	z-index: 12;
 	display: none;
 }
 .wzdh-hover dl{
@@ -245,14 +250,19 @@ li{
 	border-right: 1px solid #DDDDDD;
 	
 }
+
 .wzdh-hover dt{
 	font-weight: bold;
 	margin-top: 10px;
 }
 .wzdh-hover dd{
 	float: left;
-	width: 70px;
+	width: 75px;
 	margin-top: 10px;
+}
+
+.wzdh-hover-last dd{
+	width: 85px;
 }
 .guanzhujd:hover .gzjd{
 	display: block;
@@ -276,7 +286,7 @@ li{
 .search form input{
 	border: 2px solid #C81623;
 	width: 456px;
-	height: 36px;
+	height: 35px;
 }
 .search form button{
 	width: 82px;
@@ -285,7 +295,7 @@ li{
 	color: #fff;
 	font-size: 16px;
 	border: none;
-	/*padding-top: -6px;*/
+	// margin-top: -101px;
 	margin-left: -11px;
 	font-family: '微软雅黑';
 }
