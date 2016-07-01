@@ -362,12 +362,6 @@ li{
 	color: #666666;
 	font-size: 13px;
 }
-
-
-
-
-
-
 .hotwords{
 	width: 518px;
 	height: 20px;
@@ -675,6 +669,10 @@ li{
 	border-bottom: none;
 
 }
+.pzsh{
+
+	// background-color: red;
+}
 .pzsh h2{
 	margin-top: 30px;
 	font-weight: normal;
@@ -687,14 +685,14 @@ li{
 cursor: pointer;}
 .pzsh1{
 	width: 411px;
-	height: 255px;
+	height: 245px;
 	background-color: #F7F7F7;
 	float: left;
 	
 }
 .pzsh11{
 	width: 411px;
-	height: 205px;
+	height: 195px;
 	/*background-color: #F7F7F7;*/
 }
 .pzsh h4{
@@ -708,6 +706,9 @@ cursor: pointer;}
 .pzsh11-left{
 	padding: 50px 5px 79px 40px;
 	float: left;
+	height: 79px;
+	width: 150px;
+	background-color: #F7F7F7;
 }
 .font1{
 	color: #000;
@@ -727,14 +728,17 @@ cursor: pointer;}
 .pzsh11-right{
 	float: right;
 	background-image: url(images/11.jpg);
-	width: 200px;
-	height: 200px;
+	width: 210px;
+	height: 205px;
+	// border: 2px solid red;
+	border: transparent 2px solid;
 	background-position: -190px -10px;
 }
 .pzsh12,.pzsh13{
 	height: 158px;
-	width: 201px;
+	width: 205px;
 	float: left;
+	overflow: hidden;
 	border-top:1px solid #EDEDED; 
 	background-color: #F7F7F7;
 }
@@ -801,10 +805,10 @@ cursor: pointer;}
 }
 .pzsh22-right{
 	background-image: url(images/15.jpg);
-	width: 120px;
+	width: 100px;
 	height: 158px;
 	float: right;
-	background-position: -100px 10px;
+	background-position: -110px 10px;
 
 }
 .pzsh3{
@@ -837,8 +841,11 @@ cursor: pointer;}
 	background-position: -130px 0px;
 }
 .pzsh32{
-	width: 201px;
+	width: 203px;
 	height: 158px;
+}
+.pzsh33{
+	width: 193px;
 }
 .pzsh32-left{
 	padding: 30px 0px 0px 10px;
@@ -854,7 +861,6 @@ cursor: pointer;}
 .pzsh4{
 	float: right;
 	width: 164px;
-	height: 1px;
 }
 .pzsh4-left,.pzsh4-right{
 	width: 80px;
@@ -862,22 +868,30 @@ cursor: pointer;}
 }
 .pzsh4 li{
 	border-bottom:1px dashed #E4E4E4;
+
+}
+.pzsh4-right li{
+	margin-top: -3px;
 }
 .pzsh4-left li{
 	border-right: 1px dashed #E4E4E4;
 	padding: 0px 3px 0 5px;
+	margin-top: -2px;
 
 }
 /*中间横幅部分*/
-.f1{
-	margin-top: 20px;
+.hf{
+	width: 1300px;
+	
 }
+
 .hf li{
 	float: left;
 }
 /*1F服装鞋包*/
 .f1-header{
 	height: 37px;
+	margin-top: 40px;
 }
 .f1-header-left span{
 	background-image: url(images/product_home_1.0.0.png);
@@ -886,7 +900,8 @@ cursor: pointer;}
 	color: #fff;
 	height: 37px;
 	width: 30px;
-	font-size: 13px;text-indent: 4px;
+	font-size: 13px;
+	text-indent: 4px;
 	display: inline-block;
 
 }
@@ -1048,6 +1063,7 @@ border: 1px solid #EDEDED;
 	width: 1210px;
 	height: 50px;
 	background-color: #F7F7F7;
+	// background-color: red;
 	margin-top: 20px;
 }
 .f1-foot a{
@@ -1152,8 +1168,9 @@ border: 1px solid #EDEDED;
 .f3 {
 	margin-top: 10px;
 }
+
 .f3 .f1-header-left h2{
-	width: 654px;
+	width: 642px;
 }
 .f3 .f1-body1-1{
 	height: 45px;
@@ -1182,15 +1199,23 @@ border: 1px solid #EDEDED;
 .f3 a:hover{
 	color:#C81623; 
 }
+.f8-foot a{
+	float: left;
+	margin-bottom: 120px;
+	margin-top: 20px;
+	display: block;
+	// padding-bottom: 40px;
+}
 /*footer部分*/
 footer{
 	margin-top: 3440px;
 }
 .footer-header{
-	padding: 20px 41px;
+	padding: 0px 41px;
 	background-color: #F5F5F5;
 	width: 1221px;
 	margin: 0px auto;
+	// margin-top: -100px;
 
 }
 .footer-header img{
